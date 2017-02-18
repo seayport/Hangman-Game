@@ -1,27 +1,27 @@
-.container-fluid{
+.container-fluid {
 
 	margin: 2%;
 }
 
-.container{
+.container {
 	margin-right: 1%;
     margin-left: 8%;
     padding: none;
-    width:80%;
+    width:100%;
 }
 
-.col-md-8, #spaceWord{
+.col-md-8, #spaceWord {
 	padding-top: 10%;
     text-align: center;
     letter-spacing: 1px;
     font-size: 55px;
 }
 
-#winnerLoser{
+#winnerLoser {
 	font-size: 35px;	
 }
 
-footer{
+footer {
     position: absolute;
     bottom: 0;
     width: 100%;
@@ -31,16 +31,16 @@ footer{
     font-family: "Lucida Console", Courier, monospace;
     padding-top: 24px;
     padding-bottom: 24px;
-    border-top: 6px solid #7bcce2;
+    border-top: 6px solid purple;
     text-decoration: none;
-    font-size: 20px;
+    font-size: 16px;
     margin-top: 7%;
 
 }
 
 a {color:white;}
 
-button, .btn{
+button, .btn {
 margin-right:3%;
 opacity:1.0;
 font-family: "Lucida Console", Courier, monospace;
@@ -48,17 +48,16 @@ letter-spacing: 2px;
 font-size: 28px;
 }
 
-.panel{
+.outcomes {
 	font-family: "Lucida Console", Courier, monospace;
-	color:white;
-	background-color: #916837;
-    border-color: white;
+	color:blue;
+	background-color: #fff;
+    border-color: purple;
     border-style: solid;
     border-width: 3px;
-    border-radius: 25px;
+    border-radius: 20px;
     width:100%;
     margin-top: 15%;
-
 
 }
 
@@ -67,7 +66,7 @@ font-size: 28px;
 	opacity: 0.8;
 
 }
-.navbar-default{
+.navbar-default {
     opacity: 0.7;
 
 }
@@ -77,12 +76,12 @@ font-size: 28px;
 	font-size: 24px;
 }
 
-.head{
+.head {
 	width: 100%;
 	margin-left: 17%;
 }
 
-.mysteryWord {
+.spaceWord {
 
 	float: left;
     width: 70%;
@@ -97,12 +96,12 @@ font-size: 28px;
 	font-family: "Lucida Console", Courier, monospace;
 }
 
-span, #mysterWord{
+span, #spaceWord {
     color: white;
     font-size: 24px;
 }
 
-p{
+p {
 	margin-left: 3%;
     display: inline;
 	font-family: "Lucida Console", Courier, monospace;
@@ -110,7 +109,7 @@ p{
 }
 
 
-.status {
+.sidebar {
 
 	float:left;
 	width:30%;
@@ -134,7 +133,7 @@ body {
 
 	background-image: url("../images/stars-planets.jpg");
 	background-size: 100%;
-	background-position: center;
-	background-repeat: no-repeat;
+	background-position: bottom;
+	background-repeat: repeat;
 	margin-top: 4% 
 }

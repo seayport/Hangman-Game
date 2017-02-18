@@ -4,7 +4,10 @@ var wordList = [
  "jupiter",
  "venus",
  "uranus",
- "sun"
+ "sun",
+ "cosmic rays",
+ "galaxies",
+ "big bang"
 ]
 
 var chosenWord = "";
