@@ -1,15 +1,30 @@
 <!DOCTYPE html>
-<html>
-<head>
-    <title>JS Hangman Game</title>
-</head>
+<html lang="en-us">
+ <head>
+  <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Outer Space Hangman</title>
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="assets/css/reset.css">
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <script src="assets/javascript/hangman.js"></script>
+ </head>
 <body>
-<p>Guesses Left: <span id="guesses-left"></span></p>
-<p>Wrong Guesses: <span id="wrong-guesses"></span></p>
-<p>Wins: <span id="win-counter"></span></p>
-<p>Losses: <span id="loss-counter"></span></p>
-<h3 id="word-blank"></h3>
+ <audio autoplay="" loop="" id="audioPlayer"><source src="assets/music/Intro.mp3" type="audio/mp3"></audio>
+  <!-- Overall Bootstrap Grid -->
+  <nav class= "navbar navbar-default">
+   <div class="container-fluid header">
+   	</nav>
+  	<div class="row">
+	<p>Guesses to go: <span id="guesses-togo"></span></p>
+	<p>Erroneous Letters: <span id="erroneous-letters"></span></p>
+	<p>Wins: <span id="win-counter"></span></p>
+	<p>Losses: <span id="loss-counter"></span></p>
+	<h3 id="word-blank"></h3>
+	<footer>
+ 	 <div class="footer"
+ 	  <p>&copy; Copyright 2017 Sandy Seay</p>
+    </footer>
 
-<script src="assets/javascript/hangman.js"></script>
 </body>
 </html>

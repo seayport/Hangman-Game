@@ -1,1 +1,140 @@
-style.css
+.container-fluid{
+
+	margin: 2%;
+}
+
+.container{
+	margin-right: 1%;
+    margin-left: 8%;
+    padding: none;
+    width:80%;
+}
+
+.col-md-8, #spaceWord{
+	padding-top: 10%;
+    text-align: center;
+    letter-spacing: 1px;
+    font-size: 55px;
+}
+
+#winnerLoser{
+	font-size: 35px;	
+}
+
+footer{
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background-color: #ccc;
+    color: blue;
+    text-align: center;
+    font-family: "Lucida Console", Courier, monospace;
+    padding-top: 24px;
+    padding-bottom: 24px;
+    border-top: 6px solid #7bcce2;
+    text-decoration: none;
+    font-size: 20px;
+    margin-top: 7%;
+
+}
+
+a {color:white;}
+
+button, .btn{
+margin-right:3%;
+opacity:1.0;
+font-family: "Lucida Console", Courier, monospace;
+letter-spacing: 2px;
+font-size: 28px;
+}
+
+.panel{
+	font-family: "Lucida Console", Courier, monospace;
+	color:white;
+	background-color: #916837;
+    border-color: white;
+    border-style: solid;
+    border-width: 3px;
+    border-radius: 25px;
+    width:100%;
+    margin-top: 15%;
+
+
+}
+
+.navbar-brand {
+	display: block;
+	opacity: 0.8;
+
+}
+.navbar-default{
+    opacity: 0.7;
+
+}
+.navbar-header {
+	width:100%;
+	font-family: "Lucida Console", Courier, monospace;
+	font-size: 24px;
+}
+
+.head{
+	width: 100%;
+	margin-left: 17%;
+}
+
+.mysteryWord {
+
+	float: left;
+    width: 70%;
+    height: 8.5em;
+    font-family: "Lucida Console", Courier, monospace;
+    font-size:24px;
+
+}
+
+#guessesRemaining, #lettersGuessed, #winText, #losses {
+	color:white;
+	font-family: "Lucida Console", Courier, monospace;
+}
+
+span, #mysterWord{
+    color: white;
+    font-size: 24px;
+}
+
+p{
+	margin-left: 3%;
+    display: inline;
+	font-family: "Lucida Console", Courier, monospace;
+	font-size: 24px
+}
+
+
+.status {
+
+	float:left;
+	width:30%;
+	height:40%;
+}
+
+.btn-info:hover {
+
+	background-color: #2b93b1;
+}
+
+.gameStatus {
+
+	padding: 8%;
+    text-align: center;
+    font-size:24px;
+    font-family: "Lucida Console", Courier, monospace;
+}
+
+body {
+
+	background-image: url("../images/stars-planets.jpg");
+	background-size: 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: 4% 
+}
