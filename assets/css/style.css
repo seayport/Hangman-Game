@@ -10,15 +10,15 @@
     width:100%;
 }
 
-.col-md-8, #spaceWord {
+.col-md-7, #spaceWord {
 	padding-top: 10%;
     text-align: center;
     letter-spacing: 1px;
     font-size: 55px;
 }
 
-#winnerLoser {
-	font-size: 35px;	
+#correctGuess {
+	font-size: 25px;	
 }
 
 footer {
@@ -35,7 +35,6 @@ footer {
     text-decoration: none;
     font-size: 16px;
     margin-top: 7%;
-
 }
 
 a {color:white;}
@@ -58,14 +57,13 @@ font-size: 28px;
     border-radius: 20px;
     width:100%;
     margin-top: 15%;
-
 }
 
 .navbar-brand {
 	display: block;
 	opacity: 0.8;
-
 }
+
 .navbar-default {
     opacity: 0.7;
 
@@ -78,7 +76,7 @@ font-size: 28px;
 
 .head {
 	width: 100%;
-	margin-left: 17%;
+	margin-left: 70%;
 }
 
 .spaceWord {
