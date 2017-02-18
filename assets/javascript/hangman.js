@@ -42,7 +42,7 @@ var piece = [];
 
 // Looping or mapping over the letters of the random word
 arr.map(function(element){
-    var result = element.replace(element, '-------');
+    var result = element.replace(element, '-');
     piece.push(result);
 });
 
@@ -88,7 +88,7 @@ if(Right === word){
    outerSpace.grabId('win').textContent = "Your score is  " + outerSpace.win++;         
 }
 else{
-    outerSpace.grabId('numGuesses').textContent = "Your chances remaining " + outerSpace.guessesLeft--;
+    outerSpace.grabId('guessesLeft').textContent= "Your chances remaining " + outerSpace.guessesLeft--;
      
     console.log("They are not equal");
 }
