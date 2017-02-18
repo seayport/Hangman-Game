@@ -27,7 +27,7 @@ var outerSpace = {
 
 // Outputting values to the current word!
 var word = outerSpace.randomWord();
-console.log(word);
+//console.log(word);
 outerSpace.grabId("spaceWord").textContent = word;
 
 //The array of letters from the random word
@@ -44,7 +44,7 @@ arr.map(function(element){
     piece.push(result);
 });
 
-console.log(piece);
+//console.log(piece);
 
 // Outputting it to the DOM
 outerSpace.output('spaceWord', piece);
@@ -71,10 +71,11 @@ document.onkeyup = function(event){
         
         if(element === event.key){
             
-            
-            outerSpace.grabId('win').textContent = "Your score is  " + outerSpace.win++;
-            console.log(element);
+          
+            //outerSpace.grabId('win').textContent = "Your score is  " + outerSpace.win++;
+            //console.log(element);
             piece[index] = element;
+
         }
 
      //   else{
@@ -84,28 +85,22 @@ document.onkeyup = function(event){
 
     });
 
-console.log(piece);
+outerSpace.output('spaceWord', piece);
+
+var Right = piece.join("");
+
+if(Right === word){
+    
+}
+
+
+//var result = outerSpace.grabId('currentWord').innerHTML;
+//console.log(result);
 
 };
 
 
-    //var keyData = event.key;
-
     
-    //var para = document.createElement("P");
-
-    //var data = document.createTextNode(event.key);
-
-    //var result = para.appendChild(data);
-
-
-
-    //outerSpace.grabId('Guessed').appendChild(para);
-  
-
-
-
- //outerSpace.output('Guessed', event.key);
 
 
 
