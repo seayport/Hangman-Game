@@ -23,15 +23,34 @@ var outerSpace = {
 };
 
 
-
+outerSpace.grabId("spaceWord").textContent = outerSpace.randomWord;
 
 
 document.onkeyup = function(event){
-   outerSpace.output('Guessed', event.key);
+   
+   var typing = document.createTextNode(event.key +',');
+   outerSpace.grabId("Guessed").appendChild(typing);
+
 };
 
 
+    //var keyData = event.key;
 
+    
+    //var para = document.createElement("P");
+
+    //var data = document.createTextNode(event.key);
+
+    //var result = para.appendChild(data);
+
+
+
+    //outerSpace.grabId('Guessed').appendChild(para);
+  
+
+
+
+ //outerSpace.output('Guessed', event.key);
 
 
 
