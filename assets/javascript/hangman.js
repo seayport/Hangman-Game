@@ -10,7 +10,9 @@ var outerSpace = {
         return word;
     },
     
+    //number of guesses left
     guessesLeft: 9,
+
     // Grabbing ID from the DOM by passing id as a parameter
     grabId: function(element){
         var grab =document.getElementById(element);
@@ -27,8 +29,8 @@ var outerSpace = {
 
 // Outputting values to the current word!
 var word = outerSpace.randomWord();
-//console.log(word);
-outerSpace.grabId("spaceWord").textContent = word;
+console.log(word);
+//outerSpace.grabId("spaceWord").textContent = word;
 
 //The array of letters from the random word
 var arr = word.split('');
@@ -44,19 +46,8 @@ arr.map(function(element){
     piece.push(result);
 });
 
-//console.log(piece);
-
-// Outputting it to the DOM
-outerSpace.output('spaceWord', piece);
-//console.log(piece);
-
-//console.log(arr.length);
-//console.log(piece.length);
-
-
-}
-
-
+//Outputting to the DOM
+var decreasing = outerSpace.guessesLeft;
 
 
 
@@ -79,23 +70,29 @@ document.onkeyup = function(event){
         }
 
      //   else{
-       //     outerSpace.grabId('numGuesses').textContent = "Your chances remaining " outerSpace.numGuesses--;
-         //   console.log("it did not match!");
+       //     
        // }
 
     });
 
-outerSpace.output('spaceWord', piece);
+//outerSpace.output('spaceWord', piece);
 
 var Right = piece.join("");
 
+console.log(Right);
+outerSpace.output("spaceWord", Right)
+
+console.log(word);
+
 if(Right === word){
-    
+   outerSpace.grabId('win').textContent = "Your score is  " + outerSpace.win++;         
+}
+else{
+    outerSpace.grabId('numGuesses').textContent = "Your chances remaining " + outerSpace.guessesLeft--;
+     
+    console.log("They are not equal");
 }
 
-
-//var result = outerSpace.grabId('currentWord').innerHTML;
-//console.log(result);
 
 };
 
